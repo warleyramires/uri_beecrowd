@@ -9,3 +9,21 @@
 // Calcule e imprima o valor da distância segundo a fórmula fornecida, com 4 casas após o ponto decimal.
 
 
+const prompt = require('prompt-sync')({sigint: true})
+
+
+let arrayX1Y1, arrayX2Y2, distancia;
+
+arrayX1Y1 = prompt();
+
+arrayX2Y2 = prompt();
+
+arrayX1Y1 = arrayX1Y1.split(" ");
+arrayX2Y2 = arrayX2Y2.split(" ");
+
+console.log(arrayX1Y1);
+console.log(arrayX2Y2);
+
+distancia = Math.sqrt(Math.pow((arrayX2Y2[0]-arrayX1Y1[0]), 2) + Math.pow((arrayX2Y2[1]-arrayX1Y1[1]), 2))
+
+console.log(distancia.toFixed(4));

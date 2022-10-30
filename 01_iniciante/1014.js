@@ -8,7 +8,7 @@
 // Saída
 // Apresente o valor que representa o consumo médio do automóvel com 3 casas após a vírgula, seguido da mensagem "km/l".
 
-const prompt = require('prompt-sync')({})
+const prompt = require('prompt-sync')({sigint: true})
 
 let distancia, combustivel, kmL
 
